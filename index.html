@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel & Fashion</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-barba="wrapper">
+    <header class="nav-header">
+      <h1><a href="./index.html" id="logo">days.</a></h1>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+    </header>
+    <main data-barba="container" data-barba-namespace="home">
+      <!-- Section 1 -->
+      <section class="mountain slide">
+        <div class="hero-img">
+          <img src="./images/forest.png" alt="forest image" />
+          <div class="reveal-img"></div>
+        </div>
+        <div class="hero-desc">
+          <div class="title">
+            <h2>
+              Freedom at your <span class="mountain-span">fingertips.</span>
+            </h2>
+            <div class="title-swipe t-swipe1"></div>
+          </div>
+          <p>
+            Welcome to the Mountains! In all its territorial variety, Italy
+            boasts a large number of beautiful and evocative mountain
+            localities, ideal for visiting any time of year, whether summer or
+            winter. From north to south, the Italian mountain scene offers
+            tourists a range of landscapes: lakes at high altitutude, incredible
+            forests, enchanting villages and borgoes rich in history, traditions
+            and, of course, gastronomic pleasures.
+          </p>
+          <a href="./fashion/fashion.html" href="" class="explore mountain-exp"
+            >Explore</a
+          >
+          <!-- reveal text is an empty div that will reveal the image and other stuff hiding behind it -->
+          <div class="reveal-text"></div>
+        </div>
+      </section>
+      <!-- Section 1 END -->
+
+      <!-- Section 2 -->
+      <section class="hike slide">
+        <div class="hero-img">
+          <img src="./images/hike.png" alt="Hike image" />
+          <div class="reveal-img"></div>
+        </div>
+        <div class="hero-desc">
+          <div class="title">
+            <h2>Freedom at your <span class="hike-span">fingertips.</span></h2>
+            <div class="title-swipe t-swipe2"></div>
+          </div>
+          <p>
+            My “go to” planning tools are a mix of CalTopo and Gaia. With both
+            of these tools, and some other methods, I can plan out routes, look
+            at alternate ideas, and dream up new hikes that I can't wait to
+            tackle. The beautiful thing about hiking is that it's truly an
+            activity everyone can do. Whether you're young or old, an expert or
+            an amateur, there's a trail out there that will be perfect for you.
+          </p>
+          <a href="./fashion/fashion.html" href="" class="explore hike-exp"
+            >Explore</a
+          >
+          <!-- reveal text is an empty div that will reveal the image and other stuff hiding behind it -->
+          <div class="reveal-text"></div>
+        </div>
+      </section>
+      <!-- Section 2 END -->
+
+      <!-- Section 3 -->
+      <section class="fashion slide">
+        <div class="hero-img">
+          <img src="./images/fashion.png" alt="Fashion image" />
+          <div class="reveal-img"></div>
+        </div>
+        <div class="hero-desc">
+          <div class="title">
+            <h2>
+              Freedom at your <span class="fashion-span">fingertips.</span>
+            </h2>
+            <div class="title-swipe t-swipe3"></div>
+          </div>
+          <p>
+            We have always been intrigued by traditional menswear and level of
+            detail that goes into every piece, the idea that only the wearer
+            truly knows how special the garment is that they are wearing. That
+            menswear can be made up of simple lines and classic pieces with a
+            nostalgic feel embedded in the design but still have a sense of
+            individuality and charm. We recognise our responsibility to lower
+            our impact on the planet.
+          </p>
+          <a href="./fashion/fashion.html" class="explore fashion-exp"
+            >Explore</a
+          >
+          <!-- reveal text is an empty div that will reveal the image and other stuff hiding behind it -->
+          <div class="reveal-text"></div>
+        </div>
+      </section>
+      <!-- Section 3 END -->
+    </main>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <h3>Twitter</h3>
+        <h3>Youtube</h3>
+        <h3>Instragram</h3>
+      </ul>
+      <div class="contact">
+        <h2>Stay in touch.</h2>
+        <p>
+          "Let’s Start a Conversation" over a cup of coffee and some great
+          ideas! Connect with us through our various platforms mentioned and we
+          will get back to you..
+        </p>
+      </div>
+    </nav>
+    <div class="cursor">
+      <span class="cursor-text"></span>
+    </div>
+
+    <div class="swipe swipe1"></div>
+    <div class="swipe swipe2"></div>
+    <div class="swipe swipe3"></div>
+    <!-- Adding the scroll magic, gsap and indicators to animate the page on scroll -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!--barba js for page transitions-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+      integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+      integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+      integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
